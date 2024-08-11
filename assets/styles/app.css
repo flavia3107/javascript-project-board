@@ -4,32 +4,20 @@
 
 html {
   font-family: sans-serif;
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
   margin: 0;
-}
-
-#main-header {
-  width: 100%;
-  height: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ff0062;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  height: 100%;
 }
 
 #main-header h1 {
-  color: white;
-  margin: 0;
-}
-
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
+  color: #4f738d;
+  margin: 0 0 3rem;
+  font-size: 1.5rem;
 }
 
 ul {
@@ -40,37 +28,34 @@ ul {
 
 li {
   margin: 1rem 0;
+  color: #4a4a4a;
 }
 
 section {
-  margin: 1rem auto;
-  width: 40rem;
-  max-width: 90%;
+  width: 100%;
+  max-width: 40rem;
+  border-radius: 10px;
+  background-color: #fafafa69;
 }
 
 section ul {
-  padding: 1rem;
-  max-height: 20rem;
-  overflow: scroll;
-}
-
-section > h2 {
-  color: white;
-  margin: 0;
+  padding: 2rem 3rem;
+  height: calc(100% - 4.5rem);
+  overflow: auto;
 }
 
 button {
   font: inherit;
-  background: #ff0062;
+  background: #50738d;
   color: white;
-  border: 1px solid #ff0062;
+  border: 1px solid #50738d;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
 }
 
 button.alt {
   background: white;
-  color: #ff0062;
+  color: #50738d;
 }
 
 button:focus {
@@ -79,8 +64,8 @@ button:focus {
 
 button:hover,
 button:active {
-  background: #ff2579;
-  border-color: #ff2579;
+  background: #364f61;
+  border-color: #364f61;
   color: white;
 }
 
@@ -88,43 +73,28 @@ button:active {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   padding: 1rem;
-  background: white;
+  background: #f6fbff78;
+  cursor: grab;
 }
 
-.droppable {
-  background: #ffe0ec;
-}
-
-#active-projects {
-  border: 1px solid #870099;
-}
-
-#active-projects > header {
-  background: #870099;
+section > header {
+  background: #4f738d;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
-#active-projects header h2 {
+section header h2 {
   color: white;
   margin: 0;
 }
 
-#finished-projects {
-  border: 1px solid #535353;
-}
-
-#finished-projects > header {
-  background: #535353;
-  padding: 1rem;
+.project-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#finished-projects header h2 {
-  color: white;
-  margin: 0;
+  justify-content: center;
+  height: calc(100% - 7rem);
+  gap: 3rem;
 }
