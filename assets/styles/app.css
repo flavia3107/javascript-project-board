@@ -14,9 +14,12 @@ body {
   height: 100%;
 }
 
-#main-header h1 {
+#main-header {
+  margin: 0 0 2rem;
+}
+
+#main-header {
   color: #4f738d;
-  margin: 0 0 3rem;
   font-size: 1.5rem;
 }
 
@@ -40,7 +43,7 @@ section {
 
 section ul {
   padding: 2rem 3rem;
-  height: calc(100% - 4.5rem);
+  height: calc(100% - 5rem);
   overflow: auto;
 }
 
@@ -95,6 +98,77 @@ section header h2 {
 .project-container {
   display: flex;
   justify-content: center;
-  height: calc(100% - 7rem);
+  height: calc(100% - 8rem);
   gap: 3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  height: 35px;
+}
+
+.logo-txt {
+  padding-left: 7px;
+  display: flex;
+  flex-direction: column;
+  color: #1f1f1f;
+  align-items: flex-start;
+}
+
+.logo-img {
+  width: 2rem;
+  margin-right: 3px;
+}
+
+.logo-txt h1,
+.logo-txt span {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  letter-spacing: 4px;
+  color: #1f1f1f;
+}
+
+.logo-txt h1 {
+  font-weight: bolder;
+  font-size: 1.1rem;
+  margin-top: 2px;
+}
+
+.logo-txt span {
+  font-weight: lighter;
+  font-size: 0.85rem;
+}
+
+.row {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  height: 9px;
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cdd6dd;
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  width: 9px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
