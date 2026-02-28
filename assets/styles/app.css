@@ -133,3 +133,11 @@ a {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+
+h2 span {
+  display: inline-block;
+  max-width: calc(100% - 1rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
